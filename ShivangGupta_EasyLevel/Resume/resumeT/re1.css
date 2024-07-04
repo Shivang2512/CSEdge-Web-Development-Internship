@@ -1,0 +1,231 @@
+body {
+	background-image: url(image/resume1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;		
+	font-family: Arial, sans-serif;
+}
+.container {
+	background: #fff;
+	border-radius: 8px;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container h1{
+	color: rgba(9, 45, 162, 0.888);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+}
+form{
+	max-width: 800px;
+	margin: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1a4568;
+}
+li {
+	margin-left: 16px;
+}
+a {
+	cursor: pointer;
+}
+label{
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+input, textarea, select {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+textarea {
+	resize: vertical;
+}
+#content {
+	padding: 16px;
+	outline: none;
+	max-height: 50vh;
+	overflow: auto;
+}
+.download {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0% 0% 0% 35%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.print {
+display: inline-block;
+padding: 10px 20px;
+font-size: 16px;
+color: #000000;
+background-color: #fb5e328b;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+ }
+.print:hover {
+background-color: #f0470fdc;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0563efa3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.header {
+    /* text-align: center; */
+    font-size: xx-large;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(32, 203, 209, 0.995);
+}
+
+.header h1 {
+    margin: 0;
+    justify-content: left;
+    font-size: 32px;
+    color: #000000;
+}
+
+.header p {
+    margin: 5px 0;
+    color: #000000;
+    font-size: 18px;
+}
+
+.contact-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.summary, .skills, .experience, .projects, .certifications, .education, .languages, .references {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-top: 0;
+}
+
+p {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #000000;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+strong {
+    color: #000000;
+}
+.experience-item h4, .education-item h4 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.experience-item p, .education-item p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.experience-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item ul li {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.skill-set {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-set div {
+    width: 45%;
+}
+
+.skill-set h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.skill-set ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-set ul li {
+    margin: 5px 0;
+    color: #000000;
+}
+#cv-form{
+    /* display: none; */
+}
+#resume{
+    /* display: none; */
+}

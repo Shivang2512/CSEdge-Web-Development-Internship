@@ -1,0 +1,64 @@
+body {
+	background-image: url(image/resume-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;		
+	font-family: Arial, sans-serif;
+}
+.container2{
+	font-family: Arial, sans-serif;
+	background-color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+}
+.container2 h1{
+	color: rgba(24, 130, 59, 0.888);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+}
+.template-selector {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.template {
+    border: 2px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.template img {
+    width: 400px;
+    height: 440px;
+    display: block;
+    margin: 0 auto;
+}
+
+.template p {
+    margin-top: 60px;
+}
+
+.template.selected {
+    border-color: #007bff;
+}
+.template-selector{
+    font-size: 3pc;
+}
+#cv {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 50px;
+    cursor: pointer;
+	border-radius: 15px;
+	background-color: rgba(87, 192, 122, 0.888);
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume1</title>
+<link rel="stylesheet" href="re1.css">
+</head>
+<body>
+<div class="container" id="cv-form">
+    <h1>Resume Maker</h1>
+    <form action="/submit" method="post">
+            <div class="form">
+            <!-- Personal Information -->
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="contact">Contact No.:</label>
+                <input type="number" id="contact" name="contact"  required>
+            </div>
+            <div>
+                <label for="domain">Domain:</label>
+                <input type="text" id="domain" name="Domain" required>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="linked">LinkedIn Profile:</label>
+                <input type="link" id="linked" name="linked">
+            </div>
+            <div>
+                <label for="github">Github Profile:</label>
+                <input type="link" id="github" name="github">
+            </div>
+    
+            <!-- Summary-->
+            <div>
+                <label for="summary">Professional Summary:</label>
+                <textarea id="summary" name="editor" class="editorr"></textarea>
+            </div>
+    
+            <!-- Skills -->
+            <div>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="editor1" class="editor11"></textarea>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <label for="languages">Languages:</label>
+                <textarea id="languages" name="languages" rows="2"></textarea>
+            </div>
+    
+            <!-- Education -->
+            <div>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="4"></textarea>
+            </div>
+    
+            <!-- Experience -->
+            <div>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="editor22" class="editor22"></textarea>
+            </div>
+    
+            <!-- Projects -->
+            <div>
+                <label for="projects">Projects:</label>
+                <textarea id="projects" name="editor33" class="editor33"></textarea>
+            </div>
+    
+            <!-- Certifications -->
+            <div>
+                <label for="certifications">Certifications:</label>
+                <textarea id="certifications" name="certifications" rows="4"></textarea>
+            </div>
+    
+            
+    
+            <!-- References -->
+            <div>
+                <label for="references">References:</label>
+                <textarea id="references" name="references" rows="4"></textarea>
+            </div>
+        </div>   
+    </form>
+    <button onclick="generatecv()" class="btn">Submit</button>
+
+    <div class="resume-container" id="resume">
+        <div class="header">
+            <h1 id="namet">Rudra pratap</h1>
+            <p id="domt">Executive Manager</p>
+        </div>
+        <div class="contact-info">
+            Address:<p id="addt">4670 Garrett Street, Philadelphia, US</p>
+            Tel:<p id="cont"> 267-981-2091 </p>
+            Email:<p id="emat">  jason@developer.com</p>
+            LinkedIn:<p id="lint"> JasonMBou </p>
+            GitHub:<p id="gitt"> JasonMBou</p>
+        </div>
+        <div class="summaryt">
+            <h2>Summary</h2>
+            <p id="summaryt">Seasoned and independent Front End Developer with 5 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design.</p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul id="skillst">
+                <li>HTML, CSS, JavaScript, jQuery</li>
+                <li>Front End frameworks (Angular, Ember, React)</li>
+                <li>Responsive UI Design</li>
+                <li>WordPress</li>
+                <li>Adobe Photoshop</li>
+                <li>Visual Studio</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h2>Experience</h2>
+            <p id="expt">Philadelphia, PA Sep 2017 - currently employed
+            
+                Deliver engaging user experience through optimization of images, code, and cross-browser compatibility, increasing Time on Page by +60 seconds for +50 websites
+                Expand features, refine code, and improve processes, producing smoother operations and enhancing user engagement
+                Designed dynamic and browser compatible pages using HTML5, CSS3, jQuery, and JavaScript.
+                Built single page applications (SPA), responsive web design, UI using HTML5 grid layouts, CSS3 media queries where its an expression and can be used to either true or false.
+                Ensure efficient web development by supporting designers and app developers while resolving website performance issues
+            </p>
+            
+        </div>
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul id="projt">
+                <li><strong>Project Name 1</strong>: Description of the project and your role in it.</li>
+                <li><strong>Project Name 2</strong>: Description of the project and your role in it.</li>
+            </ul>
+        </div>
+        <div class="certifications">
+            <h2>Certifications</h2>
+            <ul id="cert">
+                <li>Certification Name 1</li>
+                <li>Certification Name 2</li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            
+            <p id="edut">Sep 2011 - Jul 2014</p>
+            
+        </div>
+        <div class="languages">
+            <h2>Languages</h2>
+            <ul id="langt">
+                <li>English (Fluent)</li>
+                <li>Spanish (Intermediate)</li>
+            </ul>
+        </div>
+        <div class="references">
+            <h2>References</h2>
+            <p id="reft">Available upon request.</p>
+        </div>
+    
+    <div class="download">
+        <button onclick="download()" class="print">Download as PDF</button>
+        <button onclick="download()" class="print">Download as DOCX</button>
+        <button onclick="download()" class="print">Download as TXT</button>  
+    </div>
+    </div>
+    <script>
+        CKEDITOR.replace( 'editor');
+    </script>
+    <script>
+        CKEDITOR.replace( 'editor1');
+    </script>
+    <script>
+        CKEDITOR.replace( 'editor2');
+    </script>
+    <script>
+        CKEDITOR.replace( 'editor3');
+    </script>
+     <script>
+        function download(){
+            window.print();
+        }
+        function generatecv() {
+        let name = document.getElementById("name").value;
+        let namet = document.getElementById("namet");
+        namet.innerHTML = name;
+        document.getElementById("domt").innerHTML = document.getElementById("domain").value;
+        document.getElementById("emat").innerHTML = document.getElementById("email").value;
+        document.getElementById("cont").innerHTML = document.getElementById("contact").value;
+        document.getElementById("addt").innerHTML = document.getElementById("address").value;
+        document.getElementById("lint").innerHTML = document.getElementById("linked").value;
+        document.getElementById("gitt").innerHTML = document.getElementById("github").value;
+        document.getElementById("summaryt").innerHTML = document.getElementById("summary").value;
+        document.getElementById("skillst").innerHTML = document.getElementById("skills").value;
+        document.getElementById("expt").innerHTML = document.getElementById("experience").value;
+        document.getElementById("projt").innerHTML = document.getElementById("projects").value;
+        document.getElementById("langt").innerHTML = document.getElementById("languages").value;
+        document.getElementById("cert").innerHTML = document.getElementById("certifications").value;
+        document.getElementById("reft").innerHTML = document.getElementById("references").value;
+        document.getElementById("edut").innerHTML = document.getElementById("education").value;
+
+        // document.getElementById('cv-form').style.display='none';
+        // document.getElementById('resume').style.display='block';
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.toolbar {
+    margin-bottom: 10px;
+}
+
+.toolbar button {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#editor {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="tool">
+    <div class="toolbar">
+        <button onclick="execCmd('bold')"><b>B</b></button>
+        <button onclick="execCmd('italic')"><i>I</i></button>
+        <button onclick="execCmd('underline')"><u>U</u></button>
+        <button onclick="execCmd('strikeThrough')"><s>S</s></button>
+        <button onclick="execCmd('insertUnorderedList')">• List</button>
+        <button onclick="execCmd('insertOrderedList')">1. List</button>
+        <button onclick="execCmd('createLink', prompt('Enter URL:', 'http://'))">Link</button>
+    </div>
+    <div id="editor" contenteditable="true">
+        Start editing...
+    </div>
+</div>
+    <script>
+        function execCmd(command, value = null) {
+    document.execCommand(command, false, value);
+}
+
+document.getElementById('editor').addEventListener('focus', function() {
+    if (this.innerHTML === 'Start editing...') {
+        this.innerHTML = '';
+    }
+});
+
+document.getElementById('editor').addEventListener('blur', function() {
+    if (this.innerHTML === '') {
+        this.innerHTML = 'Start editing...';
+    }
+});
+    </script>
+</body>
+</html>
