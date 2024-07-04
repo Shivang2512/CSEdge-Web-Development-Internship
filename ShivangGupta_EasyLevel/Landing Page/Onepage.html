@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #ea9c26;
+            color: #000000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            
+            background-color: #ea9c26;
+            padding: 60px 20px;
+        }
+        .slogan {
+            background: #df6316;
+            text-align: center;
+        }
+        .about, .services, .offers {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('rasoi.jpg');
+            background-color: #fff;
+            text-align: center;
+        }
+        .footer {
+            background: #df6316;
+            color: #fff;
+            font-size: larger;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-size: 30px;
+        }
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .box {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .box {
+                width: 80%;
+            }
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="container">
+            <a href="#slogan">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#offers">Offers</a>
+        </div>
+    </nav>
+
+    <div class="section slogan">
+        <div class="container">
+            <h1>Welcome to Our Website</h1>
+            <h2>Unlock the Beauty of Brass in Your Cooking</h2>
+            <p>Your success is our priority. Discover our services and offers today!</p>
+        </div>
+    </div>
+
+
+<div class="section">
+    <div id="about" class="section about">
+        <div class="container">
+            <h2>About Us</h2>
+            <h3>We are a dedicated team of professionals committed to providing top-notch services to our clients.</h3>
+        </div>
+    </div>
+
+    <div id="services" class="section services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="flex">
+                <div class="box">
+                    <h3>Custom Brass Utensil Crafting</h3>
+                    <p>Offering personalized brass utensils crafted according to specific designs, sizes, and preferences of the customer.</p>
+                </div>
+                <div class="box">
+                    <h3>Restoration and Polishing Service</h3>
+                    <p>Providing restoration and polishing services for antique brass utensils to bring back their original shine and beauty.</p>
+                </div>
+                <div class="box">
+                    <h3>Bulk Orders and Wholesale</h3>
+                    <p>Catering to bulk orders and wholesale requirements of brass utensils for businesses, restaurants, hotels, or other commercial establishments.</p>
+                </div>
+                <div class="box">
+                    <h3>Online Ordering and Delivery</h3>
+                    <p>Providing convenient online ordering options and doorstep delivery services for brass utensils, ensuring hassle-free shopping for customers.</p>
+                </div>
+                <div class="box">
+                    <h3>Customer Support and After-Sales Service</h3>
+                    <p>Offering dedicated customer support and after-sales service to address any queries, concerns, or issues related to brass utensils, ensuring customer satisfaction and loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="offers" class="section offers">
+        <div class="container">
+            <h2>Special Offers</h2>
+            <div class="flex">
+                <div class="box">
+                    <h3>Buy One Get One Free</h3>
+                    <p>Purchase any brass utensil and get another one of equal or lesser value for free.</p>
+                </div>
+                <div class="box">
+                    <h3>Loyalty Rewards</h3>
+                    <p>Earn points with every purchase of brass utensils and redeem them for discounts on future orders.</p>
+                </div>
+                <div class="box">
+                    <h3>Seasonal Sale</h3>
+                    <p>Take advantage of our seasonal sale and save big on selected brass utensils.</p>
+                </div>
+                <div class="box">
+                    <h3>Clearance Event</h3>
+                    <p>Shop our clearance event and grab your favorite brass utensils at unbeatable prices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div id="footer" class="section footer">
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
